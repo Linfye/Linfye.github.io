@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+不是传统意义上的好人
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+解释一下上面那句话：不是什么好人
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[windowserdu@gmail.com](mailto:windowserdu@gmail.com)
