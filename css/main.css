@@ -221,7 +221,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Monda, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -234,7 +234,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Amita, Monda, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Menlo, monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -461,7 +461,7 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: PT Mono, consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
+  font-family: consolas, consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
@@ -1035,7 +1035,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lobster Two, Monda, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Lobster Two, monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1697,7 +1697,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Montserrat, Monda, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: sans-serif, monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1883,7 +1883,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Montserrat, Monda, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: sans-serif, monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2534,7 +2534,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffed09;
+  background: #f22d1d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
