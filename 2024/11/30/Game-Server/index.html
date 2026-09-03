@@ -22,15 +22,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="之前为了玩一些游戏自建过许多游戏服务器，Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）">
+    <meta name="description" content="之前为了与朋友联机自建过许多游戏服务器：Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何开游戏服务器与其他人远程联机">
 <meta property="og:url" content="http://example.com/2024/11/30/Game-Server/index.html">
 <meta property="og:site_name" content="Penny Lane">
-<meta property="og:description" content="之前为了玩一些游戏自建过许多游戏服务器，Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）">
+<meta property="og:description" content="之前为了与朋友联机自建过许多游戏服务器：Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-12-01T02:23:09.000Z">
-<meta property="article:modified_time" content="2024-12-01T03:16:08.406Z">
+<meta property="article:modified_time" content="2026-09-03T18:38:02.065Z">
 <meta property="article:author" content="Linfye">
 <meta property="article:tag" content="Game">
 <meta property="article:tag" content="Ubuntu">
@@ -205,9 +205,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2024-11-30 20:23:09 / Modified: 21:16:08" itemprop="dateCreated datePublished" datetime="2024-11-30T20:23:09-06:00">2024-11-30</time>
+      <time title="Created: 2024-11-30 20:23:09" itemprop="dateCreated datePublished" datetime="2024-11-30T20:23:09-06:00">2024-11-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-09-03 13:38:02" itemprop="dateModified" datetime="2026-09-03T13:38:02-05:00">2026-09-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -243,7 +249,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>之前为了玩一些游戏自建过许多游戏服务器，Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）</p>
+    <div class="post-body" itemprop="articleBody"><p>之前为了与朋友联机自建过许多游戏服务器：Minecraft、泰拉瑞亚、奈斯启示录、文明 6……这篇文章就写一下开服的步骤，供以后参考。（以下的服务器都在 Ubuntu 24 LTS 版下，使用命令行；读者需要自己具有一些基础操作知识，例如 ssh, vim 等；教程下载方式都是从官方拉取，如果为国内服务器可以使用代理或者在自己电脑下载好自己上传到 vps）</p>
 <span id="more"></span>
 
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>连接 vps 后启动的进程会与 ssh 一同保持，所以需要使用第三方程序保持进程例如 tmux 或者 screen，简单用法如下。更具体可以参考阮一峰的<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2019/10/tmux.html">这篇文章</a>和<a target="_blank" rel="noopener" href="https://handerfly.github.io/linux/2019/03/31/Screan%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/">这篇文章</a>。</p>
@@ -314,14 +320,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Word count total: </span>
-    <span title="Word count total">24k</span>
+    <span title="Word count total">22k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">1:28</span>
+    <span title="Reading time total">1:19</span>
   </span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
